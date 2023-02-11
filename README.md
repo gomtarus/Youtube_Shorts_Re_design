@@ -8,3 +8,6 @@
 - 우측 버튼을 통해 다음, 이전 영상을 재생할 수 있습니다.
 - 또는 밖 영역에 마우스 휠을 작동 시 다음, 이전 영상을 재생할 수 있습니다.
 - 다음 영상으로 넘어갈 시 뒤에 재생되는 영상은 자동으로 정지가 됩니다.
+
+<br><br> 
+### 🌍 [Youtube_Shorts](https://gomtarus.github.io/Youtube_Shorts_Re_design/main.html)
