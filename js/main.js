@@ -7,11 +7,11 @@ $(document).ready(function () {
     <div class="youtube_frame" id="video_idx_${i}"></div>
     <div class="youtbue_btn_group">
       <ul>
-      <li><img src="/img/silent.png" class="sound_btn" id="vol_idx_${i}"/></li>
+      <li><img src="./img/silent.png" class="sound_btn" id="vol_idx_${i}"/></li>
         <li>
           <div class="icon_main">
             <img
-              src="/img/good_icon.png"
+              src="./img/good_icon.png"
               style="padding: 10px 10px"
             />
           </div>
@@ -20,7 +20,7 @@ $(document).ready(function () {
         <li>
           <div class="icon_main">
             <img
-              src="/img/not_good_icon.png"
+              src="./img/not_good_icon.png"
               style="padding: 13px 10px"
             />
           </div>
@@ -29,7 +29,7 @@ $(document).ready(function () {
         <li>
           <div class="icon_main">
             <img
-              src="/img/comment_icon.png"
+              src="./img/comment_icon.png"
               style="padding: 10px 10px"
             />
           </div>
@@ -38,7 +38,7 @@ $(document).ready(function () {
         <li>
           <div class="icon_main">
             <img
-              src="/img/share_icon.png"
+              src="./img/share_icon.png"
               style="padding: 10px 10px"
             />
           </div>
@@ -47,14 +47,14 @@ $(document).ready(function () {
         <li>
           <div class="icon_main">
             <img
-              src="/img/menu_more_icon.png"
+              src="./img/menu_more_icon.png"
               style="padding: 20px 10px"
             />
           </div>
         </li>
         <li>
           <div class="profile_main">
-            <img src="/img/profile.jpg" alt="" />
+            <img src="./img/profile.jpg" alt="" />
           </div>
         </li>
       </ul>
@@ -129,12 +129,12 @@ $(document).ready(function () {
       if (player[num].isMuted() == true) {
         for (let i = 0; i < list_count; i++) {
           player[i].unMute();
-          $(".sound_btn").attr("src", "/img/volume.png");
+          $(".sound_btn").attr("src", "./img/volume.png");
         }
       } else {
         for (let i = 0; i < list_count; i++) {
           player[i].mute();
-          $(".sound_btn").attr("src", "/img/silent.png");
+          $(".sound_btn").attr("src", "./img/silent.png");
         }
       }
     }
