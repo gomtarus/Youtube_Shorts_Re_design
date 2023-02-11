@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <!--jquery-->
+    <script src="./js/iframe_api.js"></script>
+    <!--youtube_api-->
+    <script src="./js/data.js"></script>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!--css-->
+    <title>YouTube</title>
+  </head>
+  <body>
+    <div class="main_wrap">
+      <div class="header_wrap">
+        <div class="header">
+          <div class="logo_wrap">
+            <a href="#"><img src="./img/youtube_logo.png" /></a>
+          </div>
+          <div class="login_wrap">
+            <img src="./img/more_icon.png" class="more_btn" />
+            <div class="login_btn">
+              <img src="./img/user_icon.png" />
+              <p>로그인</p>
+            </div>
+          </div>
+          <div class="search_wrap">
+            <div class="search_main">
+              <div class="search_bar">
+                <input type="text" placeholder="검색" />
+                <img src="./img/keyboard_icon.png" />
+                <div class="serach_btn_wrap">
+                  <img src="./img/magnifier.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="move_btn up" id="up_btn">
+          <img src="./img/arrow.png" class="up" />
+        </div>
+        <div class="move_btn down" id="down_btn">
+          <img src="./img/arrow.png" class="down" />
+        </div>
+        <!--위&아래 버튼-->
+        <div class="video_wrap">
+          <ul class="video_ul" id="video_ul">
+            <div class="temp"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
