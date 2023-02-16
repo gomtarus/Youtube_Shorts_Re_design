@@ -6,7 +6,7 @@
 
 .header {
   margin: 0 auto;
-  width: 1800px;
+  width: 100%;
   height: 56px;
   background-color: white;
 }
@@ -83,7 +83,7 @@
 /* 로그인 & 메뉴 버튼 */
 
 .search_wrap {
-  width: calc(100% - 160px);
+  width: 100%;
   height: 56px;
 }
 
@@ -297,3 +297,10 @@
 
 /* 버튼 그룹 */
 /* 영상 부분*/
+
+@media (min-width: 10000px) {
+  .header {
+    width: 1200px;
+    background-color: red;
+  }
+}
