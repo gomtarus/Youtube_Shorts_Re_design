@@ -73,35 +73,22 @@ $(document).ready(function () {
   for (let i = 0; i < list_count; i++) {
     youtube_link.push(function youtube() {
       window.YT.ready(function () {
-        if (i == 0) {
-          player[i] = new window.YT.Player("video_idx_" + i, {
-            videoId: link[i],
-            playerVars: {
-              cc_load_policy: 1, // 자막 x
-              controls: 0, // 컨트롤 표시 x
-              disablekb: 1, // 키보드 사용 x
-              playlist: link[i], // loop를 위해서는 비디오 id가 필요함
-              loop: 1, // 반복 o
-              mute: 1,
-              autoplay: 1,
-            },
-          });
-        } else {
-          player[i] = new window.YT.Player("video_idx_" + i, {
-            videoId: link[i],
-            playerVars: {
-              cc_load_policy: 1, // 자막 x
-              controls: 0, // 컨트롤 표시 x
-              disablekb: 1, // 키보드 사용 x
-              playlist: link[i], // loop를 위해서는 비디오 id가 필요함
-              loop: 1, // 반복 o
-              mute: 1,
-              autoplay: 0,
-            },
-          });
-        }
+        v_autopaly = !i; // 0일때만 참 나머지는 거짓
+        player[i] = new window.YT.Player("video_idx_" + i, {
+          videoId: link[i],
+          playerVars: {
+            cc_load_policy: 1, // 자막 x
+            controls: 0, // 컨트롤 표시 x
+            disablekb: 1, // 키보드 사용 x
+            playlist: link[i], // loop를 위해서는 비디오 id가 필요함
+            loop: 1, // 반복 o
+            mute: 1,
+            autoplay: v_autopaly,
+          },
+        });
       });
     });
+
     // ----------------------------- 플레이 정보
     youtube_play.push(function play() {
       player[i].playVideo();
