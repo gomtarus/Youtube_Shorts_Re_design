@@ -1,7 +1,7 @@
 # Youtube_Shorts 리디자인 코딩
 ● Youtube의 Youtube_Shorts 기능을 Youtube_API를 이용하여 구현하였습니다.<br>
 # 화면 설명 #
-![img](https://user-images.githubusercontent.com/118651919/222013133-315540dc-bed6-492c-b6fb-abb6185ebc04.png)<br>
+![218253693-8beb6c1f-1b84-4742-ad09-8f1f8991520d](https://user-images.githubusercontent.com/118651919/222013639-4ee62d93-900d-4e65-b724-a6cd6c3ef181.png)<br>
 - 첫 시작 시 첫 번째 영상이 자동으로 재생이 됩니다.
 - Yotubue_API 정책 상 자동 재생 시 무음으로 설정해야 해서 초기 볼륨은 무음으로 설정되어있습니다.
 - 볼륨 ON/OFF 버튼을 통해 소리를 제어할 수 있습니다.
