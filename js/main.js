@@ -109,6 +109,8 @@ $(document).ready(function () {
 
   const vol_btn = document.querySelectorAll("[id^=vol_idx_");
 
+  $("#up_btn").hide();
+
   for (let i = 0; i < vol_btn.length; i++) {
     let num = i;
     vol_btn[i].addEventListener("click", run);
@@ -201,6 +203,9 @@ $(document).ready(function () {
       youtube_pause[play_count + 1]();
     }
     $("#down_btn").show();
+    if (count < 2) {
+      $("#up_btn").hide();
+    }
   }
 
   function down() {
@@ -214,6 +219,7 @@ $(document).ready(function () {
       play_count++;
       youtube_play[play_count]();
       youtube_pause[play_count - 1]();
+      $("#up_btn").show();
     }
     if (count == frame_count - 1) {
       $("#down_btn").hide();
