@@ -200,6 +200,7 @@ $(document).ready(function () {
       youtube_play[play_count]();
       youtube_pause[play_count + 1]();
     }
+    $("#down_btn").show();
   }
 
   function down() {
@@ -213,6 +214,9 @@ $(document).ready(function () {
       play_count++;
       youtube_play[play_count]();
       youtube_pause[play_count - 1]();
+    }
+    if (count == frame_count - 1) {
+      $("#down_btn").hide();
     }
   }
   // ---------------------------- 위&아래 버튼
